@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93EF5CC315F07E0A00D48AC0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93EF5CC215F07E0A00D48AC0 /* Cocoa.framework */; };
+		93EF5CCD15F07E0A00D48AC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93EF5CCB15F07E0A00D48AC0 /* InfoPlist.strings */; };
+		93EF5CCF15F07E0A00D48AC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EF5CCE15F07E0A00D48AC0 /* main.m */; };
+		93EF5CD315F07E0B00D48AC0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 93EF5CD115F07E0B00D48AC0 /* Credits.rtf */; };
+		93EF5CD615F07E0B00D48AC0 /* JSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EF5CD515F07E0B00D48AC0 /* JSAppDelegate.m */; };
+		93EF5CD915F07E0B00D48AC0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93EF5CD715F07E0B00D48AC0 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		93EF5CBE15F07E0A00D48AC0 /* PopoverTokenField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopoverTokenField.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93EF5CC215F07E0A00D48AC0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		93EF5CC515F07E0A00D48AC0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		93EF5CC615F07E0A00D48AC0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		93EF5CC715F07E0A00D48AC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		93EF5CCA15F07E0A00D48AC0 /* PopoverTokenField-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PopoverTokenField-Info.plist"; sourceTree = "<group>"; };
+		93EF5CCC15F07E0A00D48AC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		93EF5CCE15F07E0A00D48AC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93EF5CD015F07E0A00D48AC0 /* PopoverTokenField-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PopoverTokenField-Prefix.pch"; sourceTree = "<group>"; };
+		93EF5CD215F07E0B00D48AC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		93EF5CD415F07E0B00D48AC0 /* JSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSAppDelegate.h; sourceTree = "<group>"; };
+		93EF5CD515F07E0B00D48AC0 /* JSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSAppDelegate.m; sourceTree = "<group>"; };
+		93EF5CD815F07E0B00D48AC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93EF5CBB15F07E0A00D48AC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93EF5CC315F07E0A00D48AC0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93EF5CB315F07E0900D48AC0 = {
+			isa = PBXGroup;
+			children = (
+				93EF5CC815F07E0A00D48AC0 /* PopoverTokenField */,
+				93EF5CC115F07E0A00D48AC0 /* Frameworks */,
+				93EF5CBF15F07E0A00D48AC0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93EF5CBF15F07E0A00D48AC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93EF5CBE15F07E0A00D48AC0 /* PopoverTokenField.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93EF5CC115F07E0A00D48AC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93EF5CC215F07E0A00D48AC0 /* Cocoa.framework */,
+				93EF5CC415F07E0A00D48AC0 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93EF5CC415F07E0A00D48AC0 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93EF5CC515F07E0A00D48AC0 /* AppKit.framework */,
+				93EF5CC615F07E0A00D48AC0 /* CoreData.framework */,
+				93EF5CC715F07E0A00D48AC0 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		93EF5CC815F07E0A00D48AC0 /* PopoverTokenField */ = {
+			isa = PBXGroup;
+			children = (
+				93EF5CD415F07E0B00D48AC0 /* JSAppDelegate.h */,
+				93EF5CD515F07E0B00D48AC0 /* JSAppDelegate.m */,
+				93EF5CD715F07E0B00D48AC0 /* MainMenu.xib */,
+				93EF5CC915F07E0A00D48AC0 /* Supporting Files */,
+			);
+			path = PopoverTokenField;
+			sourceTree = "<group>";
+		};
+		93EF5CC915F07E0A00D48AC0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93EF5CCA15F07E0A00D48AC0 /* PopoverTokenField-Info.plist */,
+				93EF5CCB15F07E0A00D48AC0 /* InfoPlist.strings */,
+				93EF5CCE15F07E0A00D48AC0 /* main.m */,
+				93EF5CD015F07E0A00D48AC0 /* PopoverTokenField-Prefix.pch */,
+				93EF5CD115F07E0B00D48AC0 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93EF5CBD15F07E0A00D48AC0 /* PopoverTokenField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93EF5CDC15F07E0C00D48AC0 /* Build configuration list for PBXNativeTarget "PopoverTokenField" */;
+			buildPhases = (
+				93EF5CBA15F07E0A00D48AC0 /* Sources */,
+				93EF5CBB15F07E0A00D48AC0 /* Frameworks */,
+				93EF5CBC15F07E0A00D48AC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PopoverTokenField;
+			productName = PopoverTokenField;
+			productReference = 93EF5CBE15F07E0A00D48AC0 /* PopoverTokenField.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93EF5CB515F07E0900D48AC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JS;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Jacopo Sabbatini";
+			};
+			buildConfigurationList = 93EF5CB815F07E0900D48AC0 /* Build configuration list for PBXProject "PopoverTokenField" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 93EF5CB315F07E0900D48AC0;
+			productRefGroup = 93EF5CBF15F07E0A00D48AC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93EF5CBD15F07E0A00D48AC0 /* PopoverTokenField */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93EF5CBC15F07E0A00D48AC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93EF5CCD15F07E0A00D48AC0 /* InfoPlist.strings in Resources */,
+				93EF5CD315F07E0B00D48AC0 /* Credits.rtf in Resources */,
+				93EF5CD915F07E0B00D48AC0 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93EF5CBA15F07E0A00D48AC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93EF5CCF15F07E0A00D48AC0 /* main.m in Sources */,
+				93EF5CD615F07E0B00D48AC0 /* JSAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		93EF5CCB15F07E0A00D48AC0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93EF5CCC15F07E0A00D48AC0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		93EF5CD115F07E0B00D48AC0 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93EF5CD215F07E0B00D48AC0 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		93EF5CD715F07E0B00D48AC0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93EF5CD815F07E0B00D48AC0 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93EF5CDA15F07E0B00D48AC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		93EF5CDB15F07E0B00D48AC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		93EF5CDD15F07E0C00D48AC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PopoverTokenField/PopoverTokenField-Prefix.pch";
+				INFOPLIST_FILE = "PopoverTokenField/PopoverTokenField-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		93EF5CDE15F07E0C00D48AC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PopoverTokenField/PopoverTokenField-Prefix.pch";
+				INFOPLIST_FILE = "PopoverTokenField/PopoverTokenField-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93EF5CB815F07E0900D48AC0 /* Build configuration list for PBXProject "PopoverTokenField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93EF5CDA15F07E0B00D48AC0 /* Debug */,
+				93EF5CDB15F07E0B00D48AC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93EF5CDC15F07E0C00D48AC0 /* Build configuration list for PBXNativeTarget "PopoverTokenField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93EF5CDD15F07E0C00D48AC0 /* Debug */,
+				93EF5CDE15F07E0C00D48AC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93EF5CB515F07E0900D48AC0 /* Project object */;
+}
