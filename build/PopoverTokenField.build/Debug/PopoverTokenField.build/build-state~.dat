@@ -1,0 +1,349 @@
+TPopoverTokenField
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/Info.plist PopoverTokenField/PopoverTokenField-Info.plist
+cProcessPCH /var/folders/9k/ftm5w11953g213jtvff513300000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PopoverTokenField-Prefix-dueepzblfeaukvfixttouzigawss/PopoverTokenField-Prefix.pch.pth PopoverTokenField/PopoverTokenField-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSAppDelegate.o /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/main.o /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenField.o /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenField.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenCloud.o /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloud.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSMessageInterceptor.o /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSMessageInterceptor.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenCloudViewController.o /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloudViewController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/MacOS/PopoverTokenField normal x86_64
+cCopyStringsFile /Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/Resources/en.lproj/InfoPlist.strings PopoverTokenField/en.lproj/InfoPlist.strings
+cCpResource PopoverTokenField/en.lproj/Credits.rtf build/Debug/PopoverTokenField.app/Contents/Resources/en.lproj/Credits.rtf
+cCompileXIB /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/en.lproj/MainMenu.xib
+cCompileXIB /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloudViewController.xib
+cTouch /Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c000000005023668500000000000000AA
+t1344497285
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000005010AC1C00000000000025C8
+t1343269916
+s9672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c000000005010AC1C00000000000001E5
+t1343269916
+s485
+
+N/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSAppDelegate.m
+c000000005040468B0000000000000160
+t1346389643
+s352
+
+N/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSMessageInterceptor.m
+c00000000504192A60000000000000356
+t1346474662
+s854
+
+N/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloud.m
+c0000000050404D0A0000000000002E94
+t1346391306
+s11924
+
+N/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloudViewController.m
+c000000005041C3AC0000000000000222
+t1346487212
+s546
+
+N/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloudViewController.xib
+c000000005041C48700000000000015B0
+t1346487431
+s5552
+
+N/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenField.m
+c000000005041C5AE0000000000000997
+t1346487726
+s2455
+
+N/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/PopoverTokenField-Prefix.pch
+c000000005040468A00000000000000A5
+t1346389642
+s165
+i<Cocoa/Cocoa.h>
+
+N/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/TokenCloudView.xib
+c000000005041BFDF0000000000001007
+t1346486239
+s4103
+
+N/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/en.lproj/Credits.rtf
+c000000005040468B00000000000001B4
+t1346389643
+s436
+
+N/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/en.lproj/InfoPlist.strings
+c000000005040468A000000000000002D
+t1346389642
+s45
+
+N/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/en.lproj/MainMenu.xib
+c000000005041C5D40000000000035FF0
+t1346487764
+s221168
+
+N/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/main.m
+c000000005040468A000000000000010D
+t1346389642
+s269
+
+N/Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app
+t2
+s0
+
+N/Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/Info.plist
+t2
+s0
+
+N/Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/MacOS/PopoverTokenField
+t2
+s0
+
+N/Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/Resources/JSTokenCloudViewController.nib
+t2
+s0
+
+N/Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/Resources/TokenCloudView.nib
+t2
+s0
+
+N/Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/Resources/en.lproj/Credits.rtf
+t2
+s0
+
+N/Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/Resources/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/Resources/en.lproj/MainMenu.nib
+t2
+s0
+
+N/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSAppDelegate.o
+t2
+s0
+
+N/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSMessageInterceptor.o
+t2
+s0
+
+N/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenCloud.o
+t2
+s0
+
+N/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenCloudViewController.o
+t2
+s0
+
+N/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenField.o
+t2
+s0
+
+N/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/PopoverTokenField.LinkFileList
+c000000005041C5DB0000000000000357
+t1346487771
+s855
+
+N/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/var/folders/9k/ftm5w11953g213jtvff513300000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PopoverTokenField-Prefix-dueepzblfeaukvfixttouzigawss/PopoverTokenField-Prefix.pch.pth
+t2
+s0
+
+NPopoverTokenField/PopoverTokenField-Info.plist
+c000000005040468A000000000000044D
+t1346389642
+s1101
+
+CBuild AST from /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSAppDelegate.m
+r0
+
+CBuild AST from /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSMessageInterceptor.m
+r0
+
+CBuild AST from /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloud.m
+r0
+
+CBuild AST from /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloudViewController.m
+r0
+
+CBuild AST from /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenField.m
+r0
+
+CBuild AST from /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies0e4d855afdf1b541^6491825bfdf1b541^---0#1#0#--18"Check dependencies36"3E36BE8D-1942-4BF1-A436-8AF8D3A83129-
+
+CCompileC build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSAppDelegate.o /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s368180589.372188
+e368180590.064241
+r1
+xCompileC
+xbuild/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSAppDelegate.o
+x/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSAppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSAppDelegate.me2735f6dfdf1b541^b072106efdf1b541^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSAppDelegate.m0000000000000000^3228"CompileC build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSAppDelegate.o PopoverTokenField/JSAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/dedalus/Developer/PopoverTokenField    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-generated-files.hmap -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-own-target-headers.hmap -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-all-target-headers.hmap -iquote /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-project-headers.hmap -I/Users/dedalus/Developer/PopoverTokenField/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/DerivedSources/x86_64 -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/DerivedSources -F/Users/dedalus/Developer/PopoverTokenField/build/Debug -include /var/folders/9k/ftm5w11953g213jtvff513300000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PopoverTokenField-Prefix-dueepzblfeaukvfixttouzigawss/PopoverTokenField-Prefix.pch -MMD -MT dependencies -MF /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSAppDelegate.d --serialize-diagnostics /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSAppDelegate.dia -c /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSAppDelegate.m -o /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSAppDelegate.o36"DBF8BA57-2232-4D7E-9106-FDF35174DE50-
+
+CCompileC build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSMessageInterceptor.o /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSMessageInterceptor.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s368180590.699027
+e368180590.770377
+r1
+xCompileC
+xbuild/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSMessageInterceptor.o
+x/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSMessageInterceptor.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSMessageInterceptor.m8718b36efdf1b541^3b37c56efdf1b541^---0#0#0#-19%DVTDocumentLocation2@99"file://localhost/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSMessageInterceptor.m0000000000000000^3270"CompileC build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSMessageInterceptor.o PopoverTokenField/JSMessageInterceptor.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/dedalus/Developer/PopoverTokenField    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-generated-files.hmap -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-own-target-headers.hmap -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-all-target-headers.hmap -iquote /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-project-headers.hmap -I/Users/dedalus/Developer/PopoverTokenField/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/DerivedSources/x86_64 -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/DerivedSources -F/Users/dedalus/Developer/PopoverTokenField/build/Debug -include /var/folders/9k/ftm5w11953g213jtvff513300000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PopoverTokenField-Prefix-dueepzblfeaukvfixttouzigawss/PopoverTokenField-Prefix.pch -MMD -MT dependencies -MF /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSMessageInterceptor.d --serialize-diagnostics /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSMessageInterceptor.dia -c /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSMessageInterceptor.m -o /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSMessageInterceptor.o36"70C6AC78-228C-4471-A24A-26F19454CFF2-
+
+CCompileC build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenCloud.o /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloud.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s368180590.065047
+e368180590.769552
+r1
+xCompileC
+xbuild/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenCloud.o
+x/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloud.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloud.m86c9106efdf1b541^971ac56efdf1b541^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloud.m0000000000000000^3222"CompileC build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenCloud.o PopoverTokenField/JSTokenCloud.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/dedalus/Developer/PopoverTokenField    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-generated-files.hmap -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-own-target-headers.hmap -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-all-target-headers.hmap -iquote /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-project-headers.hmap -I/Users/dedalus/Developer/PopoverTokenField/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/DerivedSources/x86_64 -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/DerivedSources -F/Users/dedalus/Developer/PopoverTokenField/build/Debug -include /var/folders/9k/ftm5w11953g213jtvff513300000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PopoverTokenField-Prefix-dueepzblfeaukvfixttouzigawss/PopoverTokenField-Prefix.pch -MMD -MT dependencies -MF /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenCloud.d --serialize-diagnostics /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenCloud.dia -c /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloud.m -o /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenCloud.o36"0A9F4A10-7BC1-410D-8412-E9C7A53E5A6C-
+
+CCompileC build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenCloudViewController.o /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloudViewController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s368180590.770813
+e368180590.870457
+r1
+xCompileC
+xbuild/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenCloudViewController.o
+x/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloudViewController.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compile /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloudViewController.m4f78c56efdf1b541^ddedde6efdf1b541^---0#0#0#-19%DVTDocumentLocation2@105"file://localhost/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloudViewController.m0000000000000000^3306"CompileC build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenCloudViewController.o PopoverTokenField/JSTokenCloudViewController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/dedalus/Developer/PopoverTokenField    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-generated-files.hmap -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-own-target-headers.hmap -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-all-target-headers.hmap -iquote /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-project-headers.hmap -I/Users/dedalus/Developer/PopoverTokenField/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/DerivedSources/x86_64 -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/DerivedSources -F/Users/dedalus/Developer/PopoverTokenField/build/Debug -include /var/folders/9k/ftm5w11953g213jtvff513300000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PopoverTokenField-Prefix-dueepzblfeaukvfixttouzigawss/PopoverTokenField-Prefix.pch -MMD -MT dependencies -MF /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenCloudViewController.d --serialize-diagnostics /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenCloudViewController.dia -c /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloudViewController.m -o /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenCloudViewController.o36"29CCA78F-0B45-4CC5-8083-532F140A34F2-
+
+CCompileC build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenField.o /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenField.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s368180590.064558
+e368180590.697711
+r1
+xCompileC
+xbuild/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenField.o
+x/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenField.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenField.mcdad106efdf1b541^abafb26efdf1b541^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenField.m0000000000000000^3222"CompileC build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenField.o PopoverTokenField/JSTokenField.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/dedalus/Developer/PopoverTokenField    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-generated-files.hmap -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-own-target-headers.hmap -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-all-target-headers.hmap -iquote /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-project-headers.hmap -I/Users/dedalus/Developer/PopoverTokenField/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/DerivedSources/x86_64 -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/DerivedSources -F/Users/dedalus/Developer/PopoverTokenField/build/Debug -include /var/folders/9k/ftm5w11953g213jtvff513300000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PopoverTokenField-Prefix-dueepzblfeaukvfixttouzigawss/PopoverTokenField-Prefix.pch -MMD -MT dependencies -MF /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenField.d --serialize-diagnostics /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenField.dia -c /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenField.m -o /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/JSTokenField.o36"948985E6-33E8-42F8-87F5-AF050E129FD0-
+
+CCompileC build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/main.o /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s368180589.372195
+e368180590.062986
+r1
+xCompileC
+xbuild/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/main.o
+x/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/main.m53755f6dfdf1b541^0326106efdf1b541^---0#0#0#-19%DVTDocumentLocation2@83"file://localhost/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/main.m0000000000000000^3174"CompileC build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/main.o PopoverTokenField/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/dedalus/Developer/PopoverTokenField    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-generated-files.hmap -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-own-target-headers.hmap -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-all-target-headers.hmap -iquote /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-project-headers.hmap -I/Users/dedalus/Developer/PopoverTokenField/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/DerivedSources/x86_64 -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/DerivedSources -F/Users/dedalus/Developer/PopoverTokenField/build/Debug -include /var/folders/9k/ftm5w11953g213jtvff513300000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PopoverTokenField-Prefix-dueepzblfeaukvfixttouzigawss/PopoverTokenField-Prefix.pch -MMD -MT dependencies -MF /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/main.dia -c /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/main.m -o /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/main.o36"7C146F05-6C1A-4B14-BADB-C79D5E4F304C-
+
+CCompileXIB /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloudViewController.xib
+s368180593.450357
+e368180600.223120
+r1
+xCompileXIB
+x/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloudViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compiling /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloudViewController.xib105a7371fdf1b541^132d3978fdf1b541^---0#0#0#-19%DVTDocumentLocation2@107"file://localhost/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloudViewController.xib0000000000000000^662"CompileXIB PopoverTokenField/JSTokenCloudViewController.xib    cd /Users/dedalus/Developer/PopoverTokenField    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/Resources/JSTokenCloudViewController.nib /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/JSTokenCloudViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk36"F08CD3E1-DA48-4B2B-8989-70D7E165841E-
+
+CCompileXIB /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/TokenCloudView.xib
+r0
+
+CCompileXIB /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/en.lproj/MainMenu.xib
+s368180593.449882
+e368180601.730007
+r1
+xCompileXIB
+x/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/en.lproj/MainMenu.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compiling /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/en.lproj/MainMenu.xibea3f7371fdf1b541^edf1ba79fdf1b541^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/en.lproj/MainMenu.xib0000000000000000^635"CompileXIB PopoverTokenField/en.lproj/MainMenu.xib    cd /Users/dedalus/Developer/PopoverTokenField    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/Resources/en.lproj/MainMenu.nib /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/en.lproj/MainMenu.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk36"76FB92CF-94F4-448C-8C0F-77B90FFA733A-
+
+CCopyStringsFile /Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/Resources/en.lproj/InfoPlist.strings PopoverTokenField/en.lproj/InfoPlist.strings
+s368180593.352629
+e368180593.449554
+r1
+xCopyStringsFile
+x/Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/Resources/en.lproj/InfoPlist.strings
+xPopoverTokenField/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Copy PopoverTokenField/en.lproj/InfoPlist.strings19566d71fdf1b541^d7157371fdf1b541^---0#0#0#-19%DVTDocumentLocation2@103"file://localhost/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/en.lproj/InfoPlist.strings0000000000000000^434"CopyStringsFile build/Debug/PopoverTokenField.app/Contents/Resources/en.lproj/InfoPlist.strings PopoverTokenField/en.lproj/InfoPlist.strings    cd /Users/dedalus/Developer/PopoverTokenField    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding UTF-16 --outdir /Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/Resources/en.lproj -- PopoverTokenField/en.lproj/InfoPlist.strings36"83D2DB16-8802-47E6-AEB0-1478EB3A23B1-
+
+CCpResource PopoverTokenField/en.lproj/Credits.rtf build/Debug/PopoverTokenField.app/Contents/Resources/en.lproj/Credits.rtf
+s368180593.353248
+e368180593.448693
+r1
+xCpResource
+xPopoverTokenField/en.lproj/Credits.rtf
+xbuild/Debug/PopoverTokenField.app/Contents/Resources/en.lproj/Credits.rtf
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Copy build/Debug/PopoverTokenField.app/Contents/Resources/en.lproj/Credits.rtfad4f6d71fdf1b541^65de7271fdf1b541^---0#0#0#-19%DVTDocumentLocation2@132"file://localhost/Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/Resources/en.lproj/Credits.rtf000000000080d041^473"CpResource PopoverTokenField/en.lproj/Credits.rtf build/Debug/PopoverTokenField.app/Contents/Resources/en.lproj/Credits.rtf    cd /Users/dedalus/Developer/PopoverTokenField    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/en.lproj/Credits.rtf /Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/Resources/en.lproj36"899F82F0-14EA-49D8-9E88-E1E786719E3B-
+
+CLd /Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/MacOS/PopoverTokenField normal x86_64
+s368180590.877199
+e368180593.344431
+r1
+xLd
+x/Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/MacOS/PopoverTokenField
+xnormal
+xx86_64
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Link /Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/MacOS/PopoverTokenFieldc9aee06efdf1b541^552e5871fdf1b541^---0#0#0#--861"Ld build/Debug/PopoverTokenField.app/Contents/MacOS/PopoverTokenField normal x86_64    cd /Users/dedalus/Developer/PopoverTokenField    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/dedalus/Developer/PopoverTokenField/build/Debug -F/Users/dedalus/Developer/PopoverTokenField/build/Debug -filelist /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/Objects-normal/x86_64/PopoverTokenField.LinkFileList -mmacosx-version-min=10.8 -fobjc-arc -fobjc-link-runtime -framework Cocoa -o /Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/MacOS/PopoverTokenField36"EE489600-468A-44D6-BFAA-008B52020255-
+
+CProcessInfoPlistFile /Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/Info.plist PopoverTokenField/PopoverTokenField-Info.plist
+s368180571.798175
+e368180571.866120
+r1
+xProcessInfoPlistFile
+x/Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/Info.plist
+xPopoverTokenField/PopoverTokenField-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Process PopoverTokenField/PopoverTokenField-Info.plista932d85bfdf1b541^b2badd5bfdf1b541^---0#0#0#-19%DVTDocumentLocation2@105"file://localhost/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/PopoverTokenField-Info.plist0000000000000000^492"ProcessInfoPlistFile build/Debug/PopoverTokenField.app/Contents/Info.plist PopoverTokenField/PopoverTokenField-Info.plist    cd /Users/dedalus/Developer/PopoverTokenField    builtin-infoPlistUtility PopoverTokenField/PopoverTokenField-Info.plist -genpkginfo /Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app/Contents/Info.plist36"D175084D-06AE-4227-AC53-4C67C49A3DF6-
+
+CProcessPCH /Users/dedalus/Library/Developer/Xcode/DerivedData/PopoverTokenField-ayebavgjkncavagjbbtjucdgxhhi/Index/PrecompiledHeaders/PopoverTokenField-Prefix-gccganfkxjmncadcnomvqyxyuuqh_ast/PopoverTokenField-Prefix.pch.pth PopoverTokenField/PopoverTokenField-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/9k/ftm5w11953g213jtvff513300000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PopoverTokenField-Prefix-dueepzblfeaukvfixttouzigawss/PopoverTokenField-Prefix.pch.pth PopoverTokenField/PopoverTokenField-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s368180571.874414
+e368180589.365236
+r1
+xProcessPCH
+x/var/folders/9k/ftm5w11953g213jtvff513300000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PopoverTokenField-Prefix-dueepzblfeaukvfixttouzigawss/PopoverTokenField-Prefix.pch.pth
+xPopoverTokenField/PopoverTokenField-Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Precompile PopoverTokenField/PopoverTokenField-Prefix.pch3a57e05bfdf1b541^737f5d6dfdf1b541^---0#0#0#-19%DVTDocumentLocation2@105"file://localhost/Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/PopoverTokenField-Prefix.pch0000000000000000^3276"ProcessPCH /var/folders/9k/ftm5w11953g213jtvff513300000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PopoverTokenField-Prefix-dueepzblfeaukvfixttouzigawss/PopoverTokenField-Prefix.pch.pth PopoverTokenField/PopoverTokenField-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/dedalus/Developer/PopoverTokenField    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-generated-files.hmap -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-own-target-headers.hmap -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-all-target-headers.hmap -iquote /Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/PopoverTokenField-project-headers.hmap -I/Users/dedalus/Developer/PopoverTokenField/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/DerivedSources/x86_64 -I/Users/dedalus/Developer/PopoverTokenField/build/PopoverTokenField.build/Debug/PopoverTokenField.build/DerivedSources -F/Users/dedalus/Developer/PopoverTokenField/build/Debug --serialize-diagnostics /var/folders/9k/ftm5w11953g213jtvff513300000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PopoverTokenField-Prefix-dueepzblfeaukvfixttouzigawss/PopoverTokenField-Prefix.pch.dia -c /Users/dedalus/Developer/PopoverTokenField/PopoverTokenField/PopoverTokenField-Prefix.pch -o /var/folders/9k/ftm5w11953g213jtvff513300000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PopoverTokenField-Prefix-dueepzblfeaukvfixttouzigawss/PopoverTokenField-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/9k/ftm5w11953g213jtvff513300000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PopoverTokenField-Prefix-dueepzblfeaukvfixttouzigawss/PopoverTokenField-Prefix.pch.d36"9C5B11AF-FCF7-4B22-8550-379E7CC78AB8-
+
+CTouch /Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app
+s368180601.737719
+e368180602.005340
+r1
+xTouch
+x/Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Touch /Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app4ef1bc79fdf1b541^1e70017afdf1b541^---0#0#0#--189"Touch build/Debug/PopoverTokenField.app    cd /Users/dedalus/Developer/PopoverTokenField    /usr/bin/touch -c /Users/dedalus/Developer/PopoverTokenField/build/Debug/PopoverTokenField.app36"1A81ABFF-CE97-4CB5-B4F0-6BB68B22D43C-
+

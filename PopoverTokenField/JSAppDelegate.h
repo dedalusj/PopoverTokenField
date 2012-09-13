@@ -11,5 +11,6 @@
 @interface JSAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+- (IBAction)LogButtonPressed:(id)sender;
 
 @end

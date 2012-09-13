@@ -13,6 +13,9 @@
 		93EF5CD315F07E0B00D48AC0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 93EF5CD115F07E0B00D48AC0 /* Credits.rtf */; };
 		93EF5CD615F07E0B00D48AC0 /* JSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EF5CD515F07E0B00D48AC0 /* JSAppDelegate.m */; };
 		93EF5CD915F07E0B00D48AC0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93EF5CD715F07E0B00D48AC0 /* MainMenu.xib */; };
+		93EF5CE115F07E8700D48AC0 /* JSTokenField.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EF5CE015F07E8700D48AC0 /* JSTokenField.m */; };
+		93EF5CE415F07EA300D48AC0 /* JSTokenCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EF5CE315F07EA300D48AC0 /* JSTokenCloud.m */; };
+		93F4EEF015F1C9AF002AA7D4 /* JSMessageInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F4EEEF15F1C9AF002AA7D4 /* JSMessageInterceptor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		93EF5CD415F07E0B00D48AC0 /* JSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSAppDelegate.h; sourceTree = "<group>"; };
 		93EF5CD515F07E0B00D48AC0 /* JSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSAppDelegate.m; sourceTree = "<group>"; };
 		93EF5CD815F07E0B00D48AC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		93EF5CDF15F07E8700D48AC0 /* JSTokenField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTokenField.h; sourceTree = "<group>"; };
+		93EF5CE015F07E8700D48AC0 /* JSTokenField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTokenField.m; sourceTree = "<group>"; };
+		93EF5CE215F07EA300D48AC0 /* JSTokenCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTokenCloud.h; sourceTree = "<group>"; };
+		93EF5CE315F07EA300D48AC0 /* JSTokenCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTokenCloud.m; sourceTree = "<group>"; };
+		93F4EEEE15F1C9AF002AA7D4 /* JSMessageInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMessageInterceptor.h; sourceTree = "<group>"; };
+		93F4EEEF15F1C9AF002AA7D4 /* JSMessageInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMessageInterceptor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		937194EC15F6BCCC0057E35A /* JSTokenField */ = {
+			isa = PBXGroup;
+			children = (
+				93EF5CE215F07EA300D48AC0 /* JSTokenCloud.h */,
+				93EF5CE315F07EA300D48AC0 /* JSTokenCloud.m */,
+				93EF5CDF15F07E8700D48AC0 /* JSTokenField.h */,
+				93EF5CE015F07E8700D48AC0 /* JSTokenField.m */,
+				93F4EEEE15F1C9AF002AA7D4 /* JSMessageInterceptor.h */,
+				93F4EEEF15F1C9AF002AA7D4 /* JSMessageInterceptor.m */,
+			);
+			name = JSTokenField;
+			sourceTree = "<group>";
+		};
 		93EF5CB315F07E0900D48AC0 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +104,7 @@
 		93EF5CC815F07E0A00D48AC0 /* PopoverTokenField */ = {
 			isa = PBXGroup;
 			children = (
+				937194EC15F6BCCC0057E35A /* JSTokenField */,
 				93EF5CD415F07E0B00D48AC0 /* JSAppDelegate.h */,
 				93EF5CD515F07E0B00D48AC0 /* JSAppDelegate.m */,
 				93EF5CD715F07E0B00D48AC0 /* MainMenu.xib */,
@@ -169,6 +192,9 @@
 			files = (
 				93EF5CCF15F07E0A00D48AC0 /* main.m in Sources */,
 				93EF5CD615F07E0B00D48AC0 /* JSAppDelegate.m in Sources */,
+				93EF5CE115F07E8700D48AC0 /* JSTokenField.m in Sources */,
+				93EF5CE415F07EA300D48AC0 /* JSTokenCloud.m in Sources */,
+				93F4EEF015F1C9AF002AA7D4 /* JSMessageInterceptor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +320,7 @@
 				93EF5CDE15F07E0C00D48AC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
