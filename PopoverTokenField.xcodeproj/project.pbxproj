@@ -15,6 +15,7 @@
 		93EF5CD915F07E0B00D48AC0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93EF5CD715F07E0B00D48AC0 /* MainMenu.xib */; };
 		93EF5CE115F07E8700D48AC0 /* JSTokenField.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EF5CE015F07E8700D48AC0 /* JSTokenField.m */; };
 		93EF5CE415F07EA300D48AC0 /* JSTokenCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EF5CE315F07EA300D48AC0 /* JSTokenCloud.m */; };
+		93F0BFD01601AA6E0027F914 /* License.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 93F0BFCF1601AA6E0027F914 /* License.rtf */; };
 		93F4EEF015F1C9AF002AA7D4 /* JSMessageInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F4EEEF15F1C9AF002AA7D4 /* JSMessageInterceptor.m */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		93EF5CE015F07E8700D48AC0 /* JSTokenField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTokenField.m; sourceTree = "<group>"; };
 		93EF5CE215F07EA300D48AC0 /* JSTokenCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTokenCloud.h; sourceTree = "<group>"; };
 		93EF5CE315F07EA300D48AC0 /* JSTokenCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTokenCloud.m; sourceTree = "<group>"; };
+		93F0BFCF1601AA6E0027F914 /* License.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = License.rtf; sourceTree = "<group>"; };
 		93F4EEEE15F1C9AF002AA7D4 /* JSMessageInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMessageInterceptor.h; sourceTree = "<group>"; };
 		93F4EEEF15F1C9AF002AA7D4 /* JSMessageInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMessageInterceptor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +70,7 @@
 		93EF5CB315F07E0900D48AC0 = {
 			isa = PBXGroup;
 			children = (
+				93F0BFCF1601AA6E0027F914 /* License.rtf */,
 				93EF5CC815F07E0A00D48AC0 /* PopoverTokenField */,
 				93EF5CC115F07E0A00D48AC0 /* Frameworks */,
 				93EF5CBF15F07E0A00D48AC0 /* Products */,
@@ -180,6 +183,7 @@
 				93EF5CCD15F07E0A00D48AC0 /* InfoPlist.strings in Resources */,
 				93EF5CD315F07E0B00D48AC0 /* Credits.rtf in Resources */,
 				93EF5CD915F07E0B00D48AC0 /* MainMenu.xib in Resources */,
+				93F0BFD01601AA6E0027F914 /* License.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
