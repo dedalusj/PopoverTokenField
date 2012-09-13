@@ -8,6 +8,7 @@ It is useful when the list of suggestions is always limited and the developer wa
 provide the user with possible tokens just before editing.
 
 This is how it looks:
+
 ![JSTokenCloud](http://s10.postimage.org/f6rd4sbyh/Screen_Shot.png)
 
 How to use it
