@@ -22,8 +22,13 @@
 @property (strong, nonatomic) NSSet *tokens;
 - (BOOL)addTokenWithString:(NSString *)token;
 - (void)removeTokenWithString:(NSString *)token;
--(void)changeTokens:(NSArray *)tokensArray stateTo:(BOOL)state;
--(void)highlightAllTokens:(BOOL)newState;
+
+-(void)selectNextToken;
+-(void)selectPreviousToken;
+
+-(void)highlightToken:(NSString *)token;
+-(void)deselectAllTokens;
+
 -(float)preferredHeightForWidth:(float)width;
 @property (readonly) float preferredHeight;
 

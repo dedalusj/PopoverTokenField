@@ -8,6 +8,7 @@
 
 #import "JSTokenField.h"
 #import "JSMessageInterceptor.h"
+#import "JSTokenFieldCell.h"
 
 @interface JSTokenField() {
     JSMessageInterceptor *delegateInterceptor;
@@ -21,6 +22,17 @@
 @end
 
 @implementation JSTokenField
+
+- (void)awakeFromNib {
+    JSTokenFieldCell *newCell = [[JSTokenFieldCell alloc] init];
+    [self setCell:newCell];
+}
+
++ (Class) cellClass
+{
+    return [JSTokenFieldCell class];
+}
+
 
 - (void)setDelegate:(id)newDelegate {
     [super setDelegate:nil];
@@ -42,6 +54,8 @@
         tokenCloudController = [[NSViewController alloc] init];
         tokenCloudController.view = tokenCloud;
         [tokenCloud setDelegate:self];
+        JSTokenFieldCell *newCell = [[JSTokenFieldCell alloc] init];
+        [self setCell:newCell];
     }
     return self;
 }
@@ -60,6 +74,8 @@
         tokenCloudController = [[NSViewController alloc] init];
         tokenCloudController.view = tokenCloud;
         [tokenCloud setDelegate:self];
+        JSTokenFieldCell *newCell = [[JSTokenFieldCell alloc] init];
+        [self setCell:newCell];
     }
     return self;
 }
@@ -135,7 +151,7 @@
             [editingText insertText:suggestionString];
             NSRange selection = NSMakeRange(insertionPoint, [suggestionString length]);
             [editingText setSelectedRange:selection];
-            [tokenCloud changeTokens:[NSArray arrayWithObject:completeSuggestionString] stateTo:YES];
+            [tokenCloud highlightToken:completeSuggestionString];
             tokenCloud.tokens = filteredTokens;
             [tokenCloud displayIfNeeded];
         }
@@ -156,7 +172,7 @@
             [tokenCloudPopover showRelativeToRect:[self bounds] ofView:self preferredEdge:NSMinYEdge];
         }
     }
-    [tokenCloud highlightAllTokens:NO];
+    [tokenCloud deselectAllTokens];
     [tokenCloud displayIfNeeded];
     
     if ([((JSMessageInterceptor *)self.delegate).receiver respondsToSelector:@selector(tokenField:shouldAddObjects:atIndex:)]) {
@@ -164,5 +180,29 @@
         return [receiver tokenField:self shouldAddObjects:tokens atIndex:index];
     } else return tokens;
 }
+
+- (void)keyDown:(NSEvent *)theEvent
+{
+    if ([theEvent modifierFlags] & NSNumericPadKeyMask) { // arrow keys have this mask
+        NSString *theArrow = [theEvent charactersIgnoringModifiers];
+        unichar keyChar = 0;
+        if ( [theArrow length] == 0 )
+            return;            // reject dead keys
+        if ( [theArrow length] == 1 ) {
+            keyChar = [theArrow characterAtIndex:0];
+            if ( keyChar == NSUpArrowFunctionKey ) {
+                if ([tokenCloudPopover isShown]) [tokenCloud selectPreviousToken];
+                return;
+            }
+            if ( keyChar == NSDownArrowFunctionKey ) {
+                if ([tokenCloudPopover isShown]) [tokenCloud selectNextToken];
+                return;
+            }
+            [super keyDown:theEvent];
+        }
+    }
+    [super keyDown:theEvent];
+}
+
 
 @end

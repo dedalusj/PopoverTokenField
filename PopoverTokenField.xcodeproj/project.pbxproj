@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93AB7CD71608029F000F685C /* JSTokenFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AB7CD61608029F000F685C /* JSTokenFieldCell.m */; };
+		93AB7CDB160802D4000F685C /* JSTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AB7CDA160802D4000F685C /* JSTextView.m */; };
 		93EF5CC315F07E0A00D48AC0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93EF5CC215F07E0A00D48AC0 /* Cocoa.framework */; };
 		93EF5CCD15F07E0A00D48AC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93EF5CCB15F07E0A00D48AC0 /* InfoPlist.strings */; };
 		93EF5CCF15F07E0A00D48AC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EF5CCE15F07E0A00D48AC0 /* main.m */; };
@@ -20,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93AB7CD51608029F000F685C /* JSTokenFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTokenFieldCell.h; sourceTree = "<group>"; };
+		93AB7CD61608029F000F685C /* JSTokenFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTokenFieldCell.m; sourceTree = "<group>"; };
+		93AB7CD9160802D4000F685C /* JSTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTextView.h; sourceTree = "<group>"; };
+		93AB7CDA160802D4000F685C /* JSTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTextView.m; sourceTree = "<group>"; };
 		93EF5CBE15F07E0A00D48AC0 /* PopoverTokenField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopoverTokenField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93EF5CC215F07E0A00D48AC0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		93EF5CC515F07E0A00D48AC0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -59,6 +65,10 @@
 			children = (
 				93EF5CE215F07EA300D48AC0 /* JSTokenCloud.h */,
 				93EF5CE315F07EA300D48AC0 /* JSTokenCloud.m */,
+				93AB7CD51608029F000F685C /* JSTokenFieldCell.h */,
+				93AB7CD61608029F000F685C /* JSTokenFieldCell.m */,
+				93AB7CD9160802D4000F685C /* JSTextView.h */,
+				93AB7CDA160802D4000F685C /* JSTextView.m */,
 				93EF5CDF15F07E8700D48AC0 /* JSTokenField.h */,
 				93EF5CE015F07E8700D48AC0 /* JSTokenField.m */,
 				93F4EEEE15F1C9AF002AA7D4 /* JSMessageInterceptor.h */,
@@ -199,6 +209,8 @@
 				93EF5CE115F07E8700D48AC0 /* JSTokenField.m in Sources */,
 				93EF5CE415F07EA300D48AC0 /* JSTokenCloud.m in Sources */,
 				93F4EEF015F1C9AF002AA7D4 /* JSMessageInterceptor.m in Sources */,
+				93AB7CD71608029F000F685C /* JSTokenFieldCell.m in Sources */,
+				93AB7CDB160802D4000F685C /* JSTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

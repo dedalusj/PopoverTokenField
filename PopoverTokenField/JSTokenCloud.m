@@ -10,12 +10,13 @@
 
 @interface JSTokenCloud() {
     NSMutableSet *_tokens;
-    NSMutableDictionary *_tokenButtons;
+    NSMutableArray *_tokenButtons;
     NSRect _prevRect;
     BOOL setup;
 }
 
 - (void)recalculateButtonLocations;
+@property (nonatomic)  NSUInteger highlightedToken;
 
 @end
 
@@ -23,12 +24,18 @@
 
 @synthesize preferredHeight = _preferredHeight;
 @synthesize delegate;
+@synthesize highlightedToken;
+
+-(void)setHighlightedToken:(NSUInteger)newHighlightedToken
+{
+    if ((newHighlightedToken>=NSNotFound) && (newHighlightedToken<[_tokens count])) highlightedToken = newHighlightedToken;
+}
 
 - (id)initWithFrame:(NSRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
 		_tokens = [[NSMutableSet alloc] init];
-		_tokenButtons = [[NSMutableDictionary alloc] init];
+		_tokenButtons = [[NSMutableArray alloc] init];
 		_prevRect = NSZeroRect;
 		_preferredHeight = -1;
     }
@@ -43,23 +50,29 @@
 	//Find the tokens that aren't in the new set and remove them from the view
 	[_tokens minusSet:set];
 	for (NSString *title in [_tokens allObjects]) {
-		[[_tokenButtons objectForKey:title] removeFromSuperview];
-		[_tokenButtons removeObjectForKey:title];
+        NSUInteger index = [self indexOfTokenWithTitle:title];
+		[[_tokenButtons objectAtIndex:index] removeFromSuperview];
+		[_tokenButtons removeObjectAtIndex:index];
 	}
 	
 	_tokens = [set mutableCopy];
 	
 	//Create new buttons
 	for (NSString *title in [_tokens allObjects]) {
-		if (![_tokenButtons objectForKey:title] && [title length]) {
+		if (([self indexOfTokenWithTitle:title]==NSNotFound) && [title length]) {
 			JSTokenButton *button = [[JSTokenButton alloc] initWithFrame:NSMakeRect(0, 0, 50, 20)];
 			[button setTitle:title];
 			[button setTarget:self];
 			[button setAction:@selector(buttonClicked:)];
-			[_tokenButtons setObject:button forKey:title];
+			[_tokenButtons addObject:button];
 		}
 	}
     [self recalculateButtonLocations];
+}
+
+-(NSUInteger)indexOfTokenWithTitle:(NSString *)title
+{
+    return [_tokenButtons indexOfObjectPassingTest:^(NSButton *obj, NSUInteger idx, BOOL *stop) { return ([obj.title isEqualToString:title]); }];
 }
 
 - (void)drawRect:(NSRect)rect {
@@ -67,7 +80,7 @@
 }
 
 -(NSArray *)sortedButton {
-     return [[_tokenButtons allValues] sortedArrayUsingDescriptors:[NSArray arrayWithObject:[[NSSortDescriptor alloc] initWithKey:@"title" ascending:YES selector:@selector(caseInsensitiveCompare:)]]];
+    return [_tokenButtons sortedArrayUsingDescriptors:[NSArray arrayWithObject:[[NSSortDescriptor alloc] initWithKey:@"title" ascending:YES selector:@selector(caseInsensitiveCompare:)]]];
 }
 
 -(NSMutableArray *)rowsArrayForWidth:(float)width
@@ -159,7 +172,7 @@
 		[button setTitle:token];
 		[button setTarget:self];
 		[button setAction:@selector(buttonClicked:)];
-		[_tokenButtons setObject:button forKey:token];
+		[_tokenButtons addObject:button];
 		[self recalculateButtonLocations];
 		returnValue = YES;
 	}
@@ -170,28 +183,32 @@
 
 - (void)removeTokenWithString:(NSString *)token {
 	if ([_tokens containsObject:token]) {
-		[[_tokenButtons objectForKey:token] removeFromSuperview];
-		[_tokenButtons removeObjectForKey:token];
+        if ([[_tokenButtons objectAtIndex:[self indexOfTokenWithTitle:token]] state]==YES) self.highlightedToken = NSNotFound;
+		[[_tokenButtons objectAtIndex:[self indexOfTokenWithTitle:token]] removeFromSuperview];
+		[_tokenButtons removeObjectAtIndex:[self indexOfTokenWithTitle:token]];
 		[self recalculateButtonLocations];
 	}
 	[_tokens removeObject:token];
 }
 
--(void)changeTokens:(NSArray *)tokensArray stateTo:(BOOL)state
+-(void)highlightToken:(NSString *)token
 {
-    for (NSString *tokenTitle in tokensArray) {
-        for (NSButton *button in [_tokenButtons allValues]) {
-            if (([button state]!=state) && ([[button title] isEqualToString:tokenTitle])) {
-                [button setState:state];
-                [self setNeedsDisplay:YES];
-            }
+    NSUInteger indexOfTokenToHighlight = [self indexOfTokenWithTitle:token];
+    if (indexOfTokenToHighlight!=NSNotFound) {
+        NSButton *tokenToHighlight = [_tokenButtons objectAtIndex:indexOfTokenToHighlight];
+        if ([tokenToHighlight state] == NO) {
+            if (self.highlightedToken!=NSNotFound) [[_tokenButtons objectAtIndex:self.highlightedToken] setState:NO];
+            [tokenToHighlight setState:YES];
+            self.highlightedToken = indexOfTokenToHighlight;
+            [self setNeedsDisplay:YES];
         }
     }
 }
 
--(void)highlightAllTokens:(BOOL)newState
+-(void)deselectAllTokens
 {
-    for (NSButton *button in [_tokenButtons allValues]) [button setState:newState];
+    if (self.highlightedToken==NSNotFound) return;
+    [[_tokenButtons objectAtIndex:self.highlightedToken] setState:NO];
     [self setNeedsDisplay:YES];
 }
 
@@ -199,6 +216,28 @@
 	if ([[self delegate] respondsToSelector:@selector(tokenCloud:didClickToken:enabled:)]) {
 		[[self delegate] tokenCloud:self didClickToken:[sender title] enabled:[sender state]];
 	}
+}
+
+-(void)selectNextToken
+{
+    if (self.highlightedToken<[_tokens count]-1) {
+        if (self.highlightedToken!=NSNotFound) [[_tokenButtons objectAtIndex:self.highlightedToken] setState:NO];
+        self.highlightedToken++;
+        [[_tokenButtons objectAtIndex:self.highlightedToken] setState:YES];
+        [self setNeedsDisplay:YES];
+    }
+}
+
+-(void)selectPreviousToken
+{
+    if (self.highlightedToken!=0) {
+        if (self.highlightedToken!=NSNotFound) {
+            [[_tokenButtons objectAtIndex:self.highlightedToken] setState:NO];
+            self.highlightedToken--;
+        } else self.highlightedToken = [_tokens count];
+        [[_tokenButtons objectAtIndex:self.highlightedToken] setState:YES];
+        [self setNeedsDisplay:YES];
+    }
 }
 
 @end
