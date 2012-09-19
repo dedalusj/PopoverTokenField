@@ -8,7 +8,6 @@
 
 #import "JSTokenField.h"
 #import "JSMessageInterceptor.h"
-#import "JSTokenFieldCell.h"
 
 @interface JSTokenField() {
     JSMessageInterceptor *delegateInterceptor;
@@ -22,17 +21,6 @@
 @end
 
 @implementation JSTokenField
-
-- (void)awakeFromNib {
-    JSTokenFieldCell *newCell = [[JSTokenFieldCell alloc] init];
-    [self setCell:newCell];
-}
-
-+ (Class) cellClass
-{
-    return [JSTokenFieldCell class];
-}
-
 
 - (void)setDelegate:(id)newDelegate {
     [super setDelegate:nil];
@@ -54,8 +42,6 @@
         tokenCloudController = [[NSViewController alloc] init];
         tokenCloudController.view = tokenCloud;
         [tokenCloud setDelegate:self];
-        JSTokenFieldCell *newCell = [[JSTokenFieldCell alloc] init];
-        [self setCell:newCell];
     }
     return self;
 }
@@ -74,8 +60,6 @@
         tokenCloudController = [[NSViewController alloc] init];
         tokenCloudController.view = tokenCloud;
         [tokenCloud setDelegate:self];
-        JSTokenFieldCell *newCell = [[JSTokenFieldCell alloc] init];
-        [self setCell:newCell];
     }
     return self;
 }
