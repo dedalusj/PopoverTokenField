@@ -19,12 +19,12 @@
 @interface JSTokenCloud : NSView
 
 @property id<JSTokenCloudDelegate> delegate;
-@property (strong, nonatomic) NSSet *tokens;
-- (BOOL)addTokenWithString:(NSString *)token;
-- (void)removeTokenWithString:(NSString *)token;
+@property (strong, nonatomic) NSArray *tokens;
+-(void)removeToken:(NSString *)token;
+-(void)addToken:(NSString *)token;
 
--(void)selectNextToken;
--(void)selectPreviousToken;
+-(NSString *)selectNextToken;
+-(NSString *)selectPreviousToken;
 
 -(void)highlightToken:(NSString *)token;
 -(void)deselectAllTokens;

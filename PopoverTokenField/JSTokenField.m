@@ -16,6 +16,7 @@
     JSTokenCloud *tokenCloud;
     BOOL justAddedCompletionString;
     BOOL shouldEndEditing;
+    NSString *currentlyInsertedSubstring;
 }
 
 @end
@@ -69,7 +70,7 @@
     if ([((JSMessageInterceptor *)self.delegate).receiver respondsToSelector:@selector(tokenField:tokensGivenCurrentTokens:)]) {
         id<JSTokenFieldDelegate> receiver = ((JSMessageInterceptor *)self.delegate).receiver;
         NSArray *tokens = [[self stringValue] componentsSeparatedByCharactersInSet:[self tokenizingCharacterSet]];
-        tokenCloud.tokens = [NSSet setWithArray:[receiver tokenField:self tokensGivenCurrentTokens:tokens]];
+        tokenCloud.tokens = [receiver tokenField:self tokensGivenCurrentTokens:tokens];
         if ([tokenCloud.tokens count]) {
             float height = [tokenCloud preferredHeightForWidth:[self bounds].size.width];
             [tokenCloudPopover setContentSize:NSMakeSize(self.frame.size.width, height)];
@@ -111,7 +112,7 @@
         [tokens addObject:str];
     }
     [self setObjectValue:[tokens copy]];
-    [cloud removeTokenWithString:str];
+    [cloud removeToken:str];
 }
 
 - (void)tokenCloud:(JSTokenCloud *)cloud didChangePreferredHeightTo:(float)newHeight
@@ -119,24 +120,35 @@
     [tokenCloudPopover setContentSize:NSMakeSize(self.frame.size.width, newHeight)];
 }
 
+-(void)changeSuggestionStringTo:(NSString *)suggestionString
+{
+    NSTextView *editingText = (NSTextView *)[[self window] fieldEditor:NO forObject:self];
+    NSString *stringToInsert = [suggestionString substringFromIndex:[currentlyInsertedSubstring length]];
+    NSUInteger insertionPoint = [editingText selectedRange].location;
+    [editingText insertText:stringToInsert];
+    NSRange selection = NSMakeRange(insertionPoint, [suggestionString length]);
+    [editingText setSelectedRange:selection];
+}
+
 - (NSArray *)tokenField:(NSTokenField *)tokenField completionsForSubstring:(NSString *)substring indexOfToken:(NSInteger)tokenIndex indexOfSelectedItem:(NSInteger *)selectedIndex
 {
     if (!justAddedCompletionString) {
+        currentlyInsertedSubstring = substring;
         NSPredicate *filterPred = [NSPredicate predicateWithFormat:@"description BEGINSWITH[cd] %@", substring];
-        NSSet *filteredTokens = [[tokenCloud tokens] filteredSetUsingPredicate:filterPred];
+        NSMutableArray *filteredTokens = [[[tokenCloud tokens] filteredArrayUsingPredicate:filterPred] mutableCopy];
         justAddedCompletionString = YES;
         if (![filteredTokens count]) {
             [tokenCloudPopover close];
         } else {
             NSTextView *editingText = (NSTextView *)[[self window] fieldEditor:NO forObject:self];
-            NSString *completeSuggestionString = [[filteredTokens allObjects] objectAtIndex:0];
+            NSString *completeSuggestionString = [filteredTokens objectAtIndex:0];
             NSString *suggestionString = [(NSString *)completeSuggestionString substringFromIndex:[substring length]];
             NSUInteger insertionPoint = [editingText selectedRange].location;
             [editingText insertText:suggestionString];
             NSRange selection = NSMakeRange(insertionPoint, [suggestionString length]);
             [editingText setSelectedRange:selection];
             [tokenCloud highlightToken:completeSuggestionString];
-            tokenCloud.tokens = filteredTokens;
+            tokenCloud.tokens = [filteredTokens copy];
             [tokenCloud displayIfNeeded];
         }
     } else justAddedCompletionString = NO;
@@ -147,7 +159,7 @@
 {
     if ([((JSMessageInterceptor *)self.delegate).receiver respondsToSelector:@selector(tokenField:tokensGivenCurrentTokens:)]) {
         id<JSTokenFieldDelegate> receiver = ((JSMessageInterceptor *)self.delegate).receiver;
-        tokenCloud.tokens = [NSSet setWithArray:[receiver tokenField:self tokensGivenCurrentTokens:[self objectValue]]];
+        tokenCloud.tokens = [receiver tokenField:self tokensGivenCurrentTokens:[self objectValue]];
         if (![tokenCloudPopover isShown] && [tokenCloud.tokens count]) {
             float height = [tokenCloud preferredHeightForWidth:[self bounds].size.width];
             [tokenCloudPopover setContentSize:NSMakeSize(self.frame.size.width, height)];
@@ -159,33 +171,29 @@
     [tokenCloud deselectAllTokens];
     [tokenCloud displayIfNeeded];
     
+    NSArray *tokensToAdd = [NSArray array];
     if ([((JSMessageInterceptor *)self.delegate).receiver respondsToSelector:@selector(tokenField:shouldAddObjects:atIndex:)]) {
         id<NSTokenFieldDelegate> receiver = ((JSMessageInterceptor *)self.delegate).receiver;
-        return [receiver tokenField:self shouldAddObjects:tokens atIndex:index];
-    } else return tokens;
+        tokensToAdd = [receiver tokenField:self shouldAddObjects:tokens atIndex:index];
+    } else tokensToAdd = tokens;
+    if ([tokensToAdd count]) currentlyInsertedSubstring = nil;
+    return tokensToAdd;
 }
 
-- (void)keyDown:(NSEvent *)theEvent
+- (BOOL)control:(NSControl *)control textView:(NSTextView *)textView doCommandBySelector:(SEL)command
 {
-    if ([theEvent modifierFlags] & NSNumericPadKeyMask) { // arrow keys have this mask
-        NSString *theArrow = [theEvent charactersIgnoringModifiers];
-        unichar keyChar = 0;
-        if ( [theArrow length] == 0 )
-            return;            // reject dead keys
-        if ( [theArrow length] == 1 ) {
-            keyChar = [theArrow characterAtIndex:0];
-            if ( keyChar == NSUpArrowFunctionKey ) {
-                if ([tokenCloudPopover isShown]) [tokenCloud selectPreviousToken];
-                return;
-            }
-            if ( keyChar == NSDownArrowFunctionKey ) {
-                if ([tokenCloudPopover isShown]) [tokenCloud selectNextToken];
-                return;
-            }
-            [super keyDown:theEvent];
+    if (([[tokenCloud tokens] count]>1) && (tokenCloudPopover.shown)) {
+        if (!strcmp((char *)command, "moveUp:")) {
+            [self changeSuggestionStringTo:[tokenCloud selectPreviousToken]];
+            [tokenCloud displayIfNeeded];
+            return YES;
+        } else if (!strcmp((char *)command, "moveDown:")) {
+            [self changeSuggestionStringTo:[tokenCloud selectNextToken]];
+            [tokenCloud displayIfNeeded];
+            return YES;
         }
     }
-    [super keyDown:theEvent];
+    return NO;
 }
 
 
