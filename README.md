@@ -36,3 +36,9 @@ Credits
 
 The code include parts from from M3TokenController (http://www.mcubedsw.com/dev)
 Copyright (c) 2006-2009 M Cubed Software
+
+Copyright
+-----------------
+
+Copyright (c) 2012 Jacopo Sabbatini
+All rights reserved.
